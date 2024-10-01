@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ozark Access Gateway</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xterm/css/xterm.css">
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      width: 800px;  /* Set width for the popup */
+      height: 400px; /* Set height for the popup */
+    }
+    #terminal-container {
+      flex: 1;
+      padding: 10px;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <div id="terminal-container"></div>
+  <script src="https://cdn.jsdelivr.net/npm/xterm/lib/xterm.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/xterm-addon-fit/lib/xterm-addon-fit.js"></script>
+  <script src="popup.js"></script> <!-- Ensure this is an external file -->
+</body>
+</html>
